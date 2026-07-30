@@ -1,0 +1,30 @@
+/* universe */
+*{
+    background-color: aqua;
+}
+
+/* id */
+#rod{
+    color: red;
+}
+
+/* class */
+.dor{
+    color: yellow;background-color: indigo;
+}
+
+/* tagname */
+aside{
+    color:orange;
+}
+section{
+    color:blanchedalmond;
+}
+
+/* grouping */
+section1,section2,p2{
+    color:brown;
+}
+
+
+

@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+}
+hr{
+    height: 100px;
+    background-color: black;
+}
+
+
+/* descendant selector */
+div h1{
+    background-color: aquamarine;
+}
+
+/* child selector */
+section>h2{
+    background-color: goldenrod;
+}
+
+
+/* adjacent siblong selector */
+div+h6{
+    background-color: red;
+    color: blue;
+}
+div+h6{
+    background-color: black;
+}
+
+/* general sibling selector */
+div~h7{
+    color: brown;
+}

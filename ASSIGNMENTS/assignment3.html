@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+         background-color: aqua;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+    }
+ h1 {
+    text-align: center;
+ }
+ hr {
+    width: 50%;
+    border: 1px solid black;
+    margin: 20px auto;
+ }
+.box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .item {
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .item img {
+            width: 100%;
+            height: 180px;
+            
+            border-radius: 10px;
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .content {
+            
+            margin: 30px;
+            padding: 25px;
+            border-radius: 15px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>BUGATTI</h1>
+    <hr>
+     <div class="box">
+        <div class="item">
+            <img src="https://bugatti.imgix.net/670657b245802769806c3590/03%20BUGATTI-World-Premiere-Presskit-Images%20(1).jpg">
+            
+        </div>
+
+        <div class="item">
+            <img src="https://bugatti.imgix.net/670657d345802769806c3598/04%20BUGATTI-World-Premiere-Presskit-Images%20(1).jpg">
+           
+        </div>
+
+        <div class="item">
+            <img src="https://bugatti.imgix.net/6706583745802769806c35b0/07%20BUGATTI-World-Premiere-Presskit-Images%20(2).jpg">
+            
+        </div>
+
+        <div class="item">
+            <img src="https://bugatti.imgix.net/6706573845802769806c357c/01%20BUGATTI-World-Premiere-Presskit-Images%20(2).jpg">
+            
+        </div>
+
+        <div class="item">
+            <img src="https://bugatti.imgix.net/6706576345802769806c3588/02%20BUGATTI-World-Premiere-Presskit-Images%20(4).jpg">
+           
+        </div>
+         <div class="item">
+            <img src="https://bugatti.imgix.net/670657f545802769806c35a0/05%20BUGATTI-World-Premiere-Presskit-Images%20(1).jpg">
+            
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

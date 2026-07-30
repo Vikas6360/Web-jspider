@@ -1,0 +1,51 @@
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    color: white;
+}
+
+*{
+    margin: 0;
+}
+
+nav>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+nav>div>input{
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+
+main{
+    height: 90vh;
+    width: 100vw;
+    background-color: aqua;
+    position: relative;
+}
+
+main>div{
+    height: 550px;
+    width: 80vw;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+

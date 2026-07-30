@@ -1,0 +1,68 @@
+body{
+    background-color: goldenrod;
+}
+
+#parent{
+    height: 500px;
+    width: 900px;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#relative{
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    /* top: 0;
+    left: 0; */
+
+    top: 200px;
+    left: 300px;
+}
+
+#absolute{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+
+    bottom: 0;
+    left: 0;
+}
+
+#fixed{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sticky{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: sticky;
+    top: 10px;
+}

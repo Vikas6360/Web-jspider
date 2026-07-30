@@ -1,0 +1,192 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: 5px solid black underline;
+            text-shadow: 5px 5px 5px gray;
+        }
+
+        body{
+            background-color: orange;
+        }
+
+        body>div:nth-child(3){
+            height: 600px;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: 50px 50px;
+            row-gap: 5px;
+            grid-template-areas: "hdr1 hdr1 hdr1"
+                                 "hdr2 hdr2 hdr2"
+                                 "sct  sct  asd"
+                                 "sct3 sct3 sct3"
+                                 "sct4 art  art"
+                                 "ftr  ftr  ftr";
+        }
+
+        body>div:nth-child(3)>div:nth-child(1){
+            background-color: white;
+            grid-area: hdr1;
+        }
+        body>div:nth-child(3)>div:nth-child(2){
+            background-color: white;
+            grid-area: hdr2;
+        }
+        body>div:nth-child(3)>div:nth-child(3){
+            background-color: white;
+            grid-area: sct;
+        }
+        body>div:nth-child(3)>div:nth-child(4){
+            background-color: white;
+            grid-area: asd;
+        }
+        body>div:nth-child(3)>div:nth-child(5){
+            background-color: white;
+            grid-area: sct1;
+        }
+        body>div:nth-child(3)>div:nth-child(6){
+            background-color: white;
+            grid-area: sct2;
+        }
+        body>div:nth-child(3)>div:nth-child(7){
+            background-color: white;
+            grid-area: sct3;
+        }
+        body>div:nth-child(3)>div:nth-child(8){
+            background-color: white;
+            grid-area: sct4;
+        }
+        body>div:nth-child(3)>div:nth-child(9){
+            background-color: white;
+            grid-area: art;
+        }
+        body>div:nth-child(3)>div:nth-child(10){
+            background-color: white;
+            grid-area: ftr;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grind in css</h1>
+    <hr>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: 5px double black underline;
+            text-shadow: 5px 5px 5px gray;
+        }
+        body{
+            background-color: purple;
+        }
+        body>div:nth-child(3){
+            height: 600px;
+            background-color: cadetblue;
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: 50px 50px;
+            row-gap: 5px;
+            column-gap: 10px;
+            grid-template-areas: "me me me"
+                                 "yu yu yu"
+                                 "se se su"
+                                 "s1 s2 s3"
+                                 "e1 e2 e2"
+                                 "ft ft ft";
+
+        }
+        body>div:nth-child(3)>div{
+            background-color: red;
+            border: 2px solid black;
+        }
+        body>div:nth-child(3)>div:nth-child(1){
+            background-color: beige;
+            grid-area: me;
+        }
+         body>div:nth-child(3)>div:nth-child(2){
+            background-color: beige;
+            grid-area: yu;
+        }
+         body>div:nth-child(3)>div:nth-child(3){
+            background-color: beige;
+            grid-area: se;
+        }
+        body>div:nth-child(3)>div:nth-child(4){
+            background-color: beige;
+            grid-area: su;
+        }
+         body>div:nth-child(3)>div:nth-child(5){
+            background-color: beige;
+            grid-area: s1;
+        }
+         body>div:nth-child(3)>div:nth-child(6){
+            background-color: beige;
+            grid-area: s2;
+        }
+         body>div:nth-child(3)>div:nth-child(7){
+            background-color: beige;
+            grid-area: s3;
+        }
+         body>div:nth-child(3)>div:nth-child(8){
+            background-color: beige;
+            grid-area: e1;
+        }
+         body>div:nth-child(3)>div:nth-child(9){
+            background-color: beige;
+            grid-area: e2;
+        }
+         body>div:nth-child(3)>div:nth-child(10){
+            background-color: beige;
+            grid-area: ft;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>
+        grid in css.
+    </h1>
+    <hr>
+   <div>
+    <div>grid items1</div>
+    <div>grid items2</div>
+    <div>grid items3</div>
+    <div>grid items4</div>
+    <div>grid items5</div>
+    <div>grid items6</div>
+    <div>grid items7</div>
+    <div>grid items8</div>
+    <div>grid items9</div>
+    <div>grid items10</div>
+   </div>
+</body>
+</html>

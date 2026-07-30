@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div:nth-child(1){
+            height: 600px;
+            width: 80%;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 30% 30% 35%;
+            grid-template-rows: 100px 200px 150px 100px;
+            justify-content: space-around;
+
+            /* row-gap: 10px;
+            column-gap: 15px ; */
+            gap: 10px 150x;
+        }
+
+        body>div:nth-child(1)>div:nth-child(1){
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        body>div:nth-child(1)>div:nth-child(2){
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        body>div:nth-child(1)>div:nth-child(3){
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 3;
+        }
+
+        body>div:nth-child(1)>div:nth-child(4){
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        body>div:nth-child(1)>div:nth-child(5){
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 3;
+        }
+
+        body>div:nth-child(1)>div:nth-child(6){
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        body>div:nth-child(1)>div:nth-child(7){
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>grid-items1</div>
+        <div>grid-items2</div>
+        <div>grid-items3</div>
+        <div>grid-items4</div>
+        <div>grid-items5</div>
+        <div>grid-items6</div>
+        <div>grid-items7</div>
+    </div>
+</body>
+</html>

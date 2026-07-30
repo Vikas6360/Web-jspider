@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red !important;
+        }
+        #demo{
+            color: green;
+        }
+        .test{
+            color: blue;
+        }
+
+        article{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            font-style: normal;
+        }
+
+        section{
+            height: 200px;
+            background-color: black;
+            position: relative;
+        }
+        section>div:nth-child(1){
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5002;
+        }
+        section>div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: rgb(29, 29, 153);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5003;
+        }
+
+         /*   hexa color first# (a-f,0-9) */
+        h4{
+            color: #000abc;
+        }
+
+        /* rgb(0-255) */
+        h4{
+            color: rgb(0,0, 255);
+        }
+
+        /* rgba */
+        h4{
+            height: 100px;
+            /* color: rgba(0, 0, 255, 1); */
+            background-color: red;
+            opacity: 0.3;
+        }
+
+        h4{
+            height: 80px;
+            background-color: brown;
+            display: inline;
+        }
+        h6{
+            height: 80px;
+            width: 80px;
+            background-color: brown;
+            display: block;
+        }
+        span{
+            background-color: green;
+            display: inline-block;
+            height: 50px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>css specificity</h1>
+    <h2>ans:it is used to change the priority of simple selectors by giving !important</h2>
+    <p id="demo" class="test">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptatem obcaecati asperiores. Vitae nostrum repellat ipsam aliquam quas dolores culpa labore enim natus non. Qui sequi repellat harum aperiam itaque.
+    </p>
+    <hr>
+
+
+    <h1>font properties</h1>
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe rerum delectus dolorum a distinctio? Vel magnam, voluptates, inventore dicta ullam unde omnis quia iste voluptatum alias beatae aspernatur officiis?</article>
+    <hr>
+
+
+    <h1>z-index</h1>
+    <h2>z-index is a css property which is used arrange the elements in stack order which element has higher z index value will appear first compare to the element which has less z index value
+        z-index works with only positions.
+    </h2>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <hr>
+
+
+    <h1>colors</h1>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic temporibus sapiente illum! Sit veritatis, obcaecati repellat hic officiis porro in quidem. Architecto molestiae id, laboriosam reiciendis fugit doloribus aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sapiente.</h4>
+
+
+    <h1>Display properties</h1>
+    <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum.
+    </h3>
+    <hr>
+    <h6>Lorem ipsum dolor sit amet.</h6>
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima <span>Lorem, ipsum.</span> consequatur atque facere amet adipisci rerum, autem fuga aut nihil laboriosam, magnam expedita vel, ratione ea quasi minus in harum? Voluptate!</h3>
+
+</body>
+</html>

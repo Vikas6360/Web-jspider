@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+
+        h1{
+            text-align: center;
+        }
+        p{
+            color: brown;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 40px;
+        }
+        p::first-line{
+            color: aqua;
+        }
+        p::after{
+            content: "thank you😊";
+        }
+        p::before{
+            content: "hi";
+        }
+        p::selection{
+            background-color: black;
+            color: aqua;
+        }
+        li::marker{
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo elements</h1>
+    <hr>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi accusamus amet iusto cupiditate nesciunt reiciendis dolore, culpa eum necessitatibus ex beatae non adipisci. Obcaecati, rem!
+    </p>
+
+    <ol>
+        <li>hi</li>
+        <li>hello</li>
+    </ol>
+</body>
+</html>

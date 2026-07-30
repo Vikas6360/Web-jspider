@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        section{
+            height: 50vh;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        section>div:nth-child(1){
+            height: 40vh;
+            width: 80vw;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        section>div>div:nth-child(2)>p{
+            width: 30vw;
+        }
+
+        @media screen and (0px<=width<=468px) {
+            section>div:nth-child(2){
+                flex-direction: column;
+            }
+            section>div>div:nth-child(1)>p{
+                color: brown;
+                width: 90%;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ipsum placeat. Praesentium mollitia sunt quia dolore et reprehenderit asperiores eaque sequi, quam, voluptas enim, aliquam ducimus. Dolorem esse ad delectus atque. Nihil laudantium veritatis cumque earum, nostrum maiores magnam sint neque voluptate doloribus repudiandae voluptates sapiente numquam quisquam omnis odio?</p>
+            <button>click</button>
+        </div>
+    </section>
+</body>
+
+</html>

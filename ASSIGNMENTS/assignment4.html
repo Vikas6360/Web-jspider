@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decathlon Sale Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: white;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0074e4;
+        }
+
+        .search input {
+            padding: 8px 15px;
+            width: 300px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .icons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-item {
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .nav-item p {
+            font-size: 12px;
+        }
+
+        .badge {
+            position: absolute;
+            top: -6px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            font-size: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== CATEGORIES ===== */
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .category {
+            text-align: center;
+        }
+
+        .category img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .category p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        /* ===== SALE BANNER ===== */
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            margin: 30px;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .banner-left {
+            font-size: 35px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .banner-left span {
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .banner-center {
+            text-align: center;
+        }
+
+        .banner-center h1 {
+            font-size: 70px;
+            color: red;
+        }
+
+        .banner-center button {
+            padding: 10px 25px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .banner-right img {
+            width: 250px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+        <div class="logo">DECATHLON</div>
+
+        <div class="search">
+            <input type="text" placeholder="Search for Cricket">
+        </div>
+
+        <div class="icons">
+            <div class="nav-item">
+                👤
+                <span class="badge">1</span>
+                <p>Sign In</p>
+            </div>
+
+            <div class="nav-item">
+                ❤️
+                <span class="badge">3</span>
+                <p>Wishlist</p>
+            </div>
+
+            <div class="nav-item">
+                🛒
+                <span class="badge">2</span>
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CATEGORIES ===== -->
+    <div class="categories">
+        <div class="category">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.Om20RjB4GLfBSLfE50842AHaFR?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <p>Winter Ready</p>
+        </div>
+
+        <div class="category">
+            <img src="https://i.pinimg.com/originals/2b/1d/94/2b1d940f640851976fa43c52a46f7eab.jpg">
+            <p>Activewear</p>
+        </div>
+
+        <div class="category">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.8outD7UeIAEcsH1hgvABQgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <p>Gym & Fitness</p>
+        </div>
+
+        <div class="category">
+            <img src="https://cdn.pixabay.com/photo/2016/08/14/21/47/bike-1594092_1280.jpg">
+            <p>Shoes</p>
+        </div>
+
+        <div class="category">
+            <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2019-8/couple-hiking-mountain-climbing-1296x728-header.jpg?w=1155&h=1528">
+            <p>Backpacks</p>
+        </div>
+    </div>
+
+    <!-- ===== SALE BANNER ===== -->
+    <div class="banner">
+        <div class="banner-left">
+            Up to 60% Off →
+            <span>until stock lasts*</span>
+        </div>
+
+        <div class="banner-center">
+            <h1>Sale</h1>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="banner-right">
+            <img src="https://th.bing.com/th/id/OIP.j_Nq8BYSYbBQVh1EGsBAywHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+        </div>
+    </div>
+
+</body>
+</html>

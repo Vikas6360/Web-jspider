@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            color: aqua;
+        }
+
+        body>div:first-child{
+            color: red;
+            font-size: 30px;
+        }
+
+        body>div:last-child{
+            color: green;
+            font-size: 30px;
+        }
+
+        body>div:nth-child(2){
+            color: yellow;
+            font-size: 30px;
+        }
+        body>div:nth-child(3)>p:last-child{
+            color: blueviolet;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- div{items$}*5  -->
+    <div>items 1</div>
+    <div>items 2</div>
+    <div>items 3
+        <button>cli</button>
+        <p>bweibcui</p>
+        <p>jkcebwuibu</p>
+    </div>
+    <div>items 4</div>
+    <div>items 5</div>
+    
+</body>
+</html>

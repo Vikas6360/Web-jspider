@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div:nth-child(1) {
+            height: 90vh;
+            width: 90vw;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            top: 50px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        body>div:nth-child(1)>div {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            right: 150px;
+            top: 500px;
+            animation-name: Box;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 4;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes Box {
+            /* from{
+                background-color: blue;
+                border-radius: 0;
+            }
+            to{
+                background-color: red;
+                border-radius: 50%;
+            } */
+
+
+            0% {
+                background-color: red;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: yellow;
+                position: relative;
+                top: 0;
+                left: 100px;
+            }
+
+            50% {
+                background-color: green;
+                position: relative;
+                top: 500px;
+                left: 500px;
+            }
+            
+            75%{
+                background-color: aqua;
+                position: relative;
+                top: 500px;
+                left: 0;
+            }
+
+            100%{
+                background-color: brown;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div:nth-child(1){
+            height: 500px;
+            width: 80vw;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            /* flex-wrap: wrap-reverse;
+
+            flex-direction: column;
+            justify-content: start;
+            align-items: end; */
+        }
+
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+
+        div>div{
+            background-color: aliceblue;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        div>div:nth-child(1){
+            border: 4;
+            align-self: flex-start;
+        }
+
+        div>div:nth-child(2){
+            order: 5;
+            align-self: flex-end;
+        }
+        
+        div>div:nth-child(3){
+            order: 3;
+            flex-grow: 2;
+        }
+
+        div>div:nth-child(4){
+            order: 1;
+        }
+
+        div>div:nth-child(5){
+            order: 5;
+            flex-shrink: 14;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>items1</div>
+        <div>items2</div>
+        <div>items3</div>
+        <div>items4</div>
+        <div>items5</div>
+    </div>
+</body>
+
+</html>
