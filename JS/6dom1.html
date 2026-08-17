@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">abc</div>
+    <div class="box">def</div>
+    <div class="box">ghi</div>
+
+
+    <script>
+       let divs = document.querySelectorAll(".box");
+       
+       i=0
+       for(div of divs){
+        div.innerText=`new ${i}`;
+        i++;
+       }
+    </script>
+
+</body>
+</html>
